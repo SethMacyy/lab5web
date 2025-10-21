@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contoh Method dalam Objek</title>
+</head>
+<body>
+    <script>
+        var person = {
+            firstName: "Surya Putra",
+            lastName: "Darma Jaya",
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        document.write("Nama Lengkap: " + person.fullName());
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Perhitungan Checkbox</title>
+    <script>
+        function hitungTotal() {
+            let total = 0;
+            if (document.getElementById("html").checked) total += 50000;
+            if (document.getElementById("css").checked) total += 40000;
+            if (document.getElementById("js").checked) total += 70000;
+            document.getElementById("total").value = total;
+        }
+    </script>
+</head>
+<body>
+    <h2>Pilihan Kursus</h2>
+    <form>
+        <input type="checkbox" id="html" onclick="hitungTotal()"> HTML (Rp 50.000)<br>
+        <input type="checkbox" id="css" onclick="hitungTotal()"> CSS (Rp 40.000)<br>
+        <input type="checkbox" id="js" onclick="hitungTotal()"> JavaScript (Rp 70.000)<br><br>
+        Total: <input type="text" id="total" readonly>
+    </form>
+</body>
+</html>
+

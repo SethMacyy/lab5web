@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Input</title>
+</head>
+<body>
+    <form name="formInput">
+        Nama: <input type="text" name="nama"><br><br>
+        Email: <input type="text" name="email"><br><br>
+        <input type="button" value="Tampil" onclick="tampilData()">
+    </form>
+
+    <script>
+        function tampilData() {
+            var nama = document.forms["formInput"]["nama"].value;
+            var email = document.forms["formInput"]["email"].value;
+            document.write("Nama: " + nama + "<br>Email: " + email);
+        }
+    </script>
+</body>
+</html>
