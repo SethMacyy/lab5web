@@ -1,33 +1,32 @@
 ````markdown
 # 🧾 LAPORAN PRAKTIKUM 5 – JAVASCRIPT
 
-**Nama:** Surya Putra Darma Jaya  
-**Mata Kuliah:** Pemrograman Web  
-**Dosen Pengampu:** Agung Nugroho, S.Kom., M.Kom  
-**Universitas:** Pelita Bangsa  
-**Praktikum ke:** 5
+Nama: Surya Putra Darma Jaya  
+Mata Kuliah: Pemrograman Web  
+Dosen Pengampu: Agung Nugroho, S.Kom., M.Kom  
+Universitas: Pelita Bangsa  
+Praktikum ke: 5  
 
 ---
 
 ## 🧩 Tujuan Praktikum
-
 1. Memahami sintaks dasar JavaScript.  
 2. Mengetahui cara penggunaan JavaScript dalam dokumen HTML.  
 3. Dapat menulis kode JavaScript sederhana.  
-4. Dapat melakukan manipulasi elemen HTML menggunakan JavaScript.
+4. Dapat melakukan manipulasi elemen HTML menggunakan JavaScript.  
 
 ---
 
 ## 📘 Dasar Teori Singkat
 
-JavaScript adalah bahasa pemrograman yang berjalan pada browser dan dapat memanipulasi elemen-elemen HTML serta gaya CSS.  
-Kode JavaScript dapat ditulis di dalam tag `<script>` baik pada bagian `<head>` maupun `<body>`, atau dipisahkan ke file eksternal `.js`.
+JavaScript adalah bahasa pemrograman yang berjalan di browser dan dapat memanipulasi elemen-elemen HTML serta gaya CSS.  
+Kode JavaScript dapat ditulis di dalam tag `<script>` pada bagian `<head>` atau `<body>`, atau dipisahkan ke file eksternal `.js`.  
 
-**Fungsi umum JavaScript:**
-- Mengubah konten HTML.  
-- Menyembunyikan/menampilkan elemen.  
-- Melakukan validasi input.  
-- Membuat interaksi dinamis dengan pengguna.
+Fungsi umum JavaScript:
+- Mengubah konten HTML  
+- Menyembunyikan/menampilkan elemen  
+- Melakukan validasi input  
+- Membuat interaksi dinamis dengan pengguna  
 
 ---
 
@@ -35,26 +34,25 @@ Kode JavaScript dapat ditulis di dalam tag `<script>` baik pada bagian `<head>` 
 
 ---
 
+````
+
 ### 🔹 1. JavaScript di dalam `<head>`
 
-**Kode:**
 ```html
 <script type="text/javascript">
     alert("Javascript pada tag head.");
 </script>
-```
+````
 
 **Hasil:**
-Saat halaman dimuat, muncul pop-up alert bertuliskan “Javascript pada tag head.”
+Muncul pop-up “Javascript pada tag head.”
 
 **Kesimpulan:**
-Script dalam `<head>` dijalankan sebelum halaman ditampilkan.
+Script di dalam `<head>` dijalankan sebelum halaman ditampilkan.
 
 ---
 
 ### 🔹 2. JavaScript di dalam `<body>`
-
-**Kode:**
 
 ```html
 <script>
@@ -85,7 +83,7 @@ document.write("Hello World dari file eksternal.");
 ```
 
 **Hasil:**
-Browser menampilkan teks dari file eksternal.
+Menampilkan teks dari file eksternal.
 
 **Kesimpulan:**
 File eksternal memudahkan pemeliharaan kode JavaScript.
@@ -94,8 +92,6 @@ File eksternal memudahkan pemeliharaan kode JavaScript.
 
 ### 🔹 4. Pemakaian Alert
 
-**Kode:**
-
 ```html
 <script>
     window.alert("Ini adalah contoh penggunaan alert!");
@@ -103,16 +99,14 @@ File eksternal memudahkan pemeliharaan kode JavaScript.
 ```
 
 **Hasil:**
-Muncul jendela pop-up berisi pesan.
+Muncul jendela pop-up dengan pesan.
 
 **Kesimpulan:**
-`alert()` digunakan untuk menampilkan pesan notifikasi kepada pengguna.
+`alert()` digunakan untuk menampilkan notifikasi kepada pengguna.
 
 ---
 
 ### 🔹 5. Pemakaian Method dalam Objek
-
-**Kode:**
 
 ```html
 <script>
@@ -137,8 +131,6 @@ Menampilkan “Nama Lengkap: Surya Putra Darma Jaya”.
 
 ### 🔹 6. Pemakaian Prompt
 
-**Kode:**
-
 ```html
 <script>
 var nama = prompt("Masukkan nama Anda:");
@@ -147,7 +139,7 @@ document.write("Halo, " + nama + "!");
 ```
 
 **Hasil:**
-Menampilkan jendela input untuk memasukkan nama, lalu menampilkan teks sapaan.
+Menampilkan jendela input lalu teks sapaan.
 
 **Kesimpulan:**
 `prompt()` digunakan untuk mengambil input dari pengguna.
@@ -155,8 +147,6 @@ Menampilkan jendela input untuk memasukkan nama, lalu menampilkan teks sapaan.
 ---
 
 ### 🔹 7. Pembuatan Fungsi
-
-**Kode:**
 
 ```html
 <script>
@@ -168,7 +158,7 @@ salam();
 ```
 
 **Hasil:**
-Menampilkan tulisan “Selamat datang di Praktikum JavaScript!”
+Menampilkan “Selamat datang di Praktikum JavaScript!”.
 
 **Kesimpulan:**
 Fungsi mempermudah pengelompokan dan pemanggilan kode berulang.
@@ -176,8 +166,6 @@ Fungsi mempermudah pengelompokan dan pemanggilan kode berulang.
 ---
 
 ### 🔹 8. Operasi Aritmatika
-
-**Kode:**
 
 ```html
 <script>
@@ -187,16 +175,14 @@ document.write("Hasil Penjumlahan: " + (a + b));
 ```
 
 **Hasil:**
-Menampilkan hasil perhitungan aritmatika.
+Menampilkan hasil operasi aritmatika.
 
 **Kesimpulan:**
-JavaScript dapat digunakan untuk operasi matematika seperti `+`, `-`, `*`, `/`.
+JavaScript dapat melakukan operasi matematika seperti `+`, `-`, `*`, `/`.
 
 ---
 
 ### 🔹 9. Seleksi Kondisi If…Else
-
-**Kode:**
 
 ```html
 <script>
@@ -210,16 +196,14 @@ if (nilai >= 75) {
 ```
 
 **Hasil:**
-Menampilkan pesan kelulusan berdasarkan input nilai.
+Menampilkan pesan kelulusan berdasarkan nilai.
 
 **Kesimpulan:**
-Kondisi `if...else` digunakan untuk pengambilan keputusan.
+`if...else` digunakan untuk pengambilan keputusan.
 
 ---
 
 ### 🔹 10. Seleksi Kondisi Switch
-
-**Kode:**
 
 ```html
 <script>
@@ -234,16 +218,14 @@ switch (grade) {
 ```
 
 **Hasil:**
-Menampilkan keterangan berdasarkan nilai huruf.
+Menampilkan keterangan nilai huruf.
 
 **Kesimpulan:**
-`switch` cocok digunakan untuk banyak kondisi tetap.
+`switch` digunakan untuk kondisi tetap dengan pilihan banyak.
 
 ---
 
 ### 🔹 11. Form Input
-
-**Kode:**
 
 ```html
 <form name="formInput">
@@ -270,8 +252,6 @@ JavaScript dapat membaca dan menampilkan nilai dari form HTML.
 ---
 
 ### 🔹 12. Validasi Form (Tugas)
-
-**Kode:**
 
 ```html
 <form name="formValid" onsubmit="return validasi()">
@@ -304,8 +284,6 @@ Validasi form mencegah pengiriman data kosong.
 
 ### 🔹 13. Checkbox dengan Perhitungan Otomatis
 
-**Kode:**
-
 ```html
 <form>
 <input type="checkbox" id="html" onclick="hitungTotal()"> HTML (Rp 50.000)<br>
@@ -329,22 +307,15 @@ function hitungTotal() {
 Nilai total berubah otomatis saat checkbox dipilih.
 
 **Kesimpulan:**
-JavaScript mampu memproses interaksi dinamis secara real-time.
+JavaScript dapat memproses interaksi dinamis secara real-time.
 
 ---
 
 ## 🧠 Kesimpulan Akhir
 
-1. JavaScript dapat berjalan di berbagai posisi dokumen HTML (`head`, `body`, atau eksternal).  
-2. Dapat digunakan untuk interaksi pengguna seperti alert, prompt, validasi form, dan perhitungan otomatis.  
+1. JavaScript dapat berjalan di berbagai posisi dokumen HTML (`head`, `body`, atau eksternal).
+2. Dapat digunakan untuk interaksi pengguna seperti alert, prompt, validasi form, dan perhitungan otomatis.
 3. Setiap latihan memperkuat pemahaman dasar logika pemrograman di JavaScript.
 
 ---
 
-✍️ **Dibuat oleh:** *Surya Putra Darma Jaya*  
-📂 **File utama:** `lab5_javascript.html` & `eksternal.js`
-````
-
----
-
-Apakah kamu mau sekalian kubuatkan versi **PDF-nya (laporan siap print)** dari file ini juga?
